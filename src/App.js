@@ -21,6 +21,7 @@ function App() {
           className="submitButton"
           onClick={(e) => {
             e.preventDefault()
+            if(newTask === '') return;
             dispatch(addNewTodo({ content: newTask, id: uuidV4() }))
             setNewTask('')
           }}>Submit</button>
