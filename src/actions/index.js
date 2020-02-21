@@ -1,7 +1,9 @@
-export const increment = () => ({
-  type: 'INCREMENT',
+export const addNewTodo = (newTask) => ({
+  type: 'ADD_NEW_TASK',
+  payload: newTask,
 })
 
-export const decrement = () => ({
-  type: 'DECREMENT',
+export const deleteTodo = (id) => ({
+  type: 'DELETE_TASK',
+  payload: id,
 })

@@ -1,10 +1,8 @@
 import { combineReducers } from 'redux'
-import counterReducer from './counterReducer'
-import isLoggedReducer from './isLoggedReducer'
+import todoList from './addNewTaskReducer'
 
 const rootReducer = combineReducers({
-  counter: counterReducer,
-  isLogged: isLoggedReducer,
+  todoList,
 })
 
 export default rootReducer
